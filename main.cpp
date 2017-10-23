@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include "sort/selectionSort.h"
+#include <string>
+#include <iostream>
+#include "include/utils.h"
+#include "include/basic.h"
+#include "include/sort.h"
 
-void printArray (int values[], int count);
+using namespace std;
 
 int main () {
-    int values[] = {11,32,34,4,5};
 
-    printArray(values, 5);
+    string question = "원하는 항목을 선택하세요.";
+    string items[] = {"c++", "정렬"};
     
-    // 선택정렬
-    selectionSort(values, 5);
+    int inputVal = askQuestion(question, items, sizeof(items)/sizeof(items[0]));
 
-    printArray(values, 5);
+    if (inputVal == 1) {
+        basic::question();
+    } else {
+        sort::question();
+    }
 
     return 0;
-}
-
-void printArray (int values[], int count) {
-    for ( int i=0 ; i<count ; i++ ) {
-        printf("%d ", values[i]);
-    }
-    printf("\n");
 }
