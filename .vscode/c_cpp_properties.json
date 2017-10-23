@@ -4,18 +4,22 @@
             "name": "Mac",
             "includePath": [
                 "/usr/include/c++/4.2.1",
+                "/usr/include/c++/4.2.1/tr1",
                 "/usr/local/include",
                 "/usr/include",
-                "${workspaceRoot}"
+                "${workspaceRoot}",
+                "${workspaceRoot}/include"
             ],
-            "defines": [],
+            "defines": ["__LITTLE_ENDIAN__"],
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [
                     "/usr/include/c++/4.2.1",
+                    "/usr/include/c++/4.2.1/tr1",
                     "/usr/local/include",
                     "/usr/include",
-                    "${workspaceRoot}"
+                    "${workspaceRoot}",
+                    "${workspaceRoot}/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
