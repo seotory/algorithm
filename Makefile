@@ -2,6 +2,7 @@
 CC = clang++ 
 OPTION = -W -Wall -fPIC
 TARGET = main
+INCLUDE = $(shell pwd)/include
 
 run : build
 	@echo "";
@@ -11,7 +12,7 @@ run : build
 	@echo "";
 
 build : clean
-	$(CC) $(OPTION) *.cpp */**.cpp */*/*.cpp  -o $(TARGET).out
+	$(CC) $(OPTION) *.cpp */**.cpp */*/*.cpp  -o $(TARGET).out -I $(INCLUDE)
 
 clean : 
 	rm -rf *.o *.out *.exe *SYM
