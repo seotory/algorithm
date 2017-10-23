@@ -4,7 +4,6 @@
             "name": "Mac",
             "includePath": [
                 "/usr/include/c++/4.2.1",
-                "/usr/include/c++/4.2.1/tr1",
                 "/usr/local/include",
                 "/usr/include",
                 "${workspaceRoot}",
@@ -15,7 +14,6 @@
             "browse": {
                 "path": [
                     "/usr/include/c++/4.2.1",
-                    "/usr/include/c++/4.2.1/tr1",
                     "/usr/local/include",
                     "/usr/include",
                     "${workspaceRoot}",
