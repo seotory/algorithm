@@ -10,7 +10,7 @@ namespace basic {
 
         string question = "원하는 세부항목을 선택하세요.";
         string items[] = {"숫자로 비트연산"};
-        int inputVal = askQuestion(question, items, 1);
+        int inputVal = askQuestion(question, items, size(items));
 
         if ( inputVal == 1 ) {
             numberBit(1, 2);

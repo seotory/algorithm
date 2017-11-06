@@ -12,7 +12,7 @@ namespace sort {
 
         string question = "원하는 세부항목을 선택하세요.";
         string items[] = {"선택정렬"};
-        int inputVal = askQuestion(question, items, 1);
+        int inputVal = askQuestion(question, items, size(items));
 
         if ( inputVal == 1 ) {
             selectionSortRun();

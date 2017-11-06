@@ -12,7 +12,7 @@ int main () {
     string question = "원하는 항목을 선택하세요.";
     string items[] = {"c++", "정렬"};
     
-    int inputVal = askQuestion(question, items, sizeof(items)/sizeof(items[0]));
+    int inputVal = askQuestion(question, items, size(items));
 
     if (inputVal == 1) {
         basic::question();
